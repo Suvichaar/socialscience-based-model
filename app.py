@@ -111,7 +111,7 @@ ENGINE_BY_SUBJECT = [
 ]
 
 # Create a subject → (engine_name, description) dictionary
-ENGINE_BY_SUBJECT_SOCIAL = {s: (e, d) for (s, e, d) in ENGINE_MAP_SOCIAL}
+ENGINE_BY_SUBJECT_SOCIAL = {s: (e, d) for (s, e, d) in ENGINE_BY_SUBJECT}
 
 # Render table in Streamlit for reference
 def render_engine_table_social():
