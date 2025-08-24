@@ -102,7 +102,7 @@ if missing_core:
 # Social Sciences & Humanities → Engine Map
 # ---------------------------
 
-ENGINE_MAP_SOCIAL = [
+ENGINE_BY_SUBJECT = [
     ("History",      "Timeline Engine",     "Explains past events shaping the present"),
     ("Civics",       "Governance Engine",   "Focuses on laws, policies & social systems"),
     ("Geography",    "Exploration Engine",  "Understands earth, maps, and resources"),
