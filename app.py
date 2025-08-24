@@ -102,7 +102,7 @@ if missing_core:
 # Social Sciences & Humanities → Engine Map
 # ---------------------------
 
-ENGINE_BY_SUBJECT = [
+ENGINE_MAP_LL = [
     ("History",      "Timeline Engine",     "Explains past events shaping the present"),
     ("Civics",       "Governance Engine",   "Focuses on laws, policies & social systems"),
     ("Geography",    "Exploration Engine",  "Understands earth, maps, and resources"),
@@ -111,12 +111,12 @@ ENGINE_BY_SUBJECT = [
 ]
 
 # Create a subject → (engine_name, description) dictionary
-ENGINE_BY_SUBJECT_SOCIAL = {s: (e, d) for (s, e, d) in ENGINE_BY_SUBJECT}
+ENGINE_BY_SUBJECT = {s: (e, d) for (s, e, d) in ENGINE_MAP_LL}
 
 # Render table in Streamlit for reference
 def render_engine_table_social():
     lines = ["| Subject | Engine Name | Meaning/Purpose |", "|---|---|---|"]
-    for s, e, d in ENGINE_BY_SUBJECT:
+    for s, e, d in ENGINE_MAP_LL:
         lines.append(f"| {s} | {e} | {d} |")
     return "\n".join(lines)
 
