@@ -116,7 +116,7 @@ ENGINE_BY_SUBJECT_SOCIAL = {s: (e, d) for (s, e, d) in ENGINE_BY_SUBJECT}
 # Render table in Streamlit for reference
 def render_engine_table_social():
     lines = ["| Subject | Engine Name | Meaning/Purpose |", "|---|---|---|"]
-    for s, e, d in ENGINE_MAP_SOCIAL:
+    for s, e, d in ENGINE_BY_SUBJECT:
         lines.append(f"| {s} | {e} | {d} |")
     return "\n".join(lines)
 
